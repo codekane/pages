@@ -17,7 +17,10 @@ div.pattern {
 }
 
 div.line {
-  height: 0.24in;
+  height: 0.25in;
   width: 5.33in;
   border-bottom: 0.01in solid teal;
+  &:first-of-type {
+    border-top: 0.01in solid teal;
+  }
 }
