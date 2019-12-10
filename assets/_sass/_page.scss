@@ -19,8 +19,8 @@ div.pattern {
 div.line {
   height: 0.25in;
   width: 5.33in;
-  border-bottom: 0.01in solid teal;
+  border-bottom: 0.01in solid var(--line-color);
   &:first-of-type {
-    border-top: 0.01in solid teal;
+    border-top: 0.01in solid var(--line-color);
   }
 }
