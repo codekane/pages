@@ -1,6 +1,6 @@
 {% assign lineheight = site.lineheight %}
 {% assign pageheight = site.pageheight %}
-{% assign lines = pageheight | divided_by: lineheight | round %}
+{% assign lines = pageheight | divided_by: lineheight | round | subtract 4 %}
 {% for line in (1..lines) %}
 <div class="line">
 </div>
