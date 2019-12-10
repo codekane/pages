@@ -4,17 +4,14 @@
   {%- include head.html -%}
 
   <body>
+    {% assign count = site.quantity %}
+    {% for page in (1..count) %}
+    <div class="page">
 
-    {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-
-    {%- include footer.html -%}
-
+      {% include_cached lined_page.html %}
+      
+    </div>
+    {% endfor %}
   </body>
 
 </html>

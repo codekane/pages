@@ -1,0 +1,23 @@
+div.page {
+  height: 7.75in;
+  width: 5.125in;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  // background: linear-gradient(top, rgb(136,199,201) 58%, rgb(202,232,235) 100%);
+  line-height: 0.25in;
+  border: 0px solid #d2d2d2;
+  background: #fff;
+  // background-size: 100% 20px;
+}
+
+div.pattern {
+  height: 100%;
+  background-image: repeating-linear-gradient(white 0in, white 0.24in, teal 0.25in);
+  -webkit-print-color-adjust: exact;
+}
+
+div.line {
+  height: 0.25in;
+  width: 5.125in;
+  border-bottom: 0.01in solid teal;
+}

@@ -1,0 +1,42 @@
+@page {
+  size: 5.5in 8.5in;
+  margin-top: 0.375in;
+  margin-bottom: 0.375in;
+
+  &:left {
+    margin-left: 0.17in;
+    margin-right: 0.375in;
+  }
+
+  &:right {
+    margin-right: 0.17in;
+    margin-left: 0.375;
+  }
+
+  @top-left-corner, @top-left, @top-center, @top-right, @top-right-corner {
+    margin-top: 0.17in;
+  }
+  @top-left-corner, @left-top, @left-center, @left-bottom, @left-bottom-corner {
+    margin-left: 0.17in;
+  }
+  @bottom-left-corner, @bottom-left, @bottom-center, @bottom-right,
+  @bottom-right-corner {
+    margin-bottom: 0.17in;
+  }
+  @top-right-corner, @right-top, @right-center, @right-bottom,
+  @right-bottom-corner {
+    margin-right: 0.17in;
+  }
+}
+
+@prince-pdf {
+  prince-pdf-page-layout: two-page;
+  prince-pdf-duplex: duplex-flip-short-edge;
+}
+
+div.page {
+  break-after: page;
+  margin-inside: 0.375in;
+  margin-outside: 0.375in;
+}
+
