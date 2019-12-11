@@ -1,4 +1,10 @@
 ---
 layout: default
 ---
+{% assign count = site.quantity %}
+{% for page in (1..count) %}
+<div class="page">
+  {% include_cached lined_page.html %}
+</div>
+{% endfor %}
 
