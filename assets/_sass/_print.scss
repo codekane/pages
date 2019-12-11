@@ -3,19 +3,48 @@
   margin-top: 0.5in;
   margin-bottom: 0.17in;
 }
-
-@page:left {
-  @bottom-left {
-    // content: counter(page);
-  }
+h1 {
+  page-break-before: always;
 }
-
+h1,h2,h3,h4,h5 {
+  page-break-after: avoid;
+}
+table, figure {
+  page-break-inside: avoid;
+}
 @page:right {
   @bottom-right {
-    // content: counter(page);
+    content: "Page " counter(page);
+    margin-right: 0.17in;
+    font-size: 11pt;
+    border-top: .25pt solid #666;
+    color: #555;
+  }
+  @bottom-left {
+    border-top: .25pt solid #666;
+    margin-left: 0.17in;
+    content: $book-title;
+    font-size: 9pt;
+    color: #333;
   }
 }
+@page:left {
+  @bottom-left {
+    content: "Page " counter(page);
+    margin-left: 0.17in;
+    font-size: 11pt;
+    border-top: .25pt solid #666;
+    color: #555;
+  }
+  @bottom-right {
+    border-top: .25pt solid #666;
+    margin-right: 0.17in;
+    content: $book-title;
+    font-size: 9pt;
+    color: #333;
+  }
 
+}
 @page :left {
   margin-left: 0in;
   margin-right: 0.17in;
@@ -69,10 +98,6 @@
 }
 div.page {
   break-after: page;
-  /*
-  // margin-inside: 0.375in;
-  //margin-outside: 0.375in;
-  //*/
 }
 
 .guide {

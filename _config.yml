@@ -23,6 +23,9 @@ twitter_username: ginfuru
 github_username: ginfuru
 
 # My shit
+book:
+  title: "Your Book"
+
 quantity: 4
 lineheight: 0.26
 pageheight: 7.75
