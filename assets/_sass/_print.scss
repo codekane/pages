@@ -12,36 +12,49 @@ h1,h2,h3,h4,h5 {
 table, figure {
   page-break-inside: avoid;
 }
-@page:right {
+
+@page content:right {
   @bottom-right {
     content: "Page " counter(page);
-    margin-right: 0.17in;
     font-size: 11pt;
     border-top: .25pt solid #666;
     color: #555;
   }
   @bottom-left {
     border-top: .25pt solid #666;
-    margin-left: 0.17in;
     content: $book-title;
     font-size: 9pt;
     color: #333;
   }
 }
-@page:left {
+@page content:left {
   @bottom-left {
-    content: "Page " counter(page);
-    margin-left: 0.17in;
     font-size: 11pt;
-    border-top: .25pt solid #666;
     color: #555;
+    border-top: .25pt solid #666;
+    content: "Page " counter(page);
   }
   @bottom-right {
-    border-top: .25pt solid #666;
-    margin-right: 0.17in;
     content: $book-title;
+    border-top: .25pt solid #666;
     font-size: 9pt;
     color: #333;
+  }
+}
+@page:right {
+  @bottom-right {
+    margin-right: 0.17in;
+  }
+  @bottom-left {
+    margin-left: 0.17in;
+  }
+}
+@page:left {
+  @bottom-left {
+    margin-left: 0.17in;
+  }
+  @bottom-right {
+    margin-right: 0.17in;
   }
 
 }

@@ -4,6 +4,21 @@
   {%- include head.html -%}
 
   <body>
+    {% if site.book.coverpage == true %}
+      <div class="frontcover">
+      </div>
+      <div class="backcover">
+      </div>
+    {% endif %}
+    <div class="contact">
+      <div class="contact-info">
+        <p>In case of loss, please return to:</p>
+        <div class="blank-line"></div>
+        <div class="blank-line"></div>
+        <div class="blank-line"></div>
+        <div class="blank-line"></div>
+      </div>
+    </div>
     {{ content }}
   </body>
 

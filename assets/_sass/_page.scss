@@ -3,6 +3,7 @@ div.page {
   width: 5.33in;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
+  page: content;
   // background: linear-gradient(top, rgb(136,199,201) 58%, rgb(202,232,235) 100%);
   line-height: 0.25in;
   border: 0px solid #d2d2d2;
@@ -10,10 +11,47 @@ div.page {
   // background-size: 100% 20px;
 }
 
+div.contact-info {
+  width: 3in;
+  margin-top: 1in;
+  height: 1.5in;
+  margin-left: 1.25in;
+  break-before: right;
+}
+
+div.blank-line {
+  width: 3in;
+  height: 0.25in;
+  border-bottom: solid 1px black;
+  line-height: 0.25in;
+}
+
+
 div.pattern {
   height: 100%;
   background-image: repeating-linear-gradient(white 0in, white 0.24in, teal 0.25in);
   -webkit-print-color-adjust: exact;
+}
+
+div.frontcover {
+  page: cover;
+  content: url($coverart);
+  max-width: 4.5in;
+  max-height: 7.5in;
+  margin: 0.5in 0.5in 0.5in 0.5in;
+  page-break-after: always;
+}
+
+div.backcover {
+  page: cover;
+  width: 5.5in;
+  height: 8.5in;
+  margin: 0.17in 0.17in 0.17in 0.17in;
+  page-break-after: always;
+}
+
+div.contact {
+  page: contact;
 }
 
 div.line {
