@@ -26,6 +26,7 @@ github_username: ginfuru
 book:
   title: "Your Book"
   coverpage: false
+  contactpage: false
 quantity: 4
 lineheight: 0.26
 pageheight: 7.75
