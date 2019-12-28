@@ -55,47 +55,46 @@ Presently supplies of vinyl flooring are, optimistically, enough for ~350 half-l
 
 ### Spiral Coils
 
-The coils are presently being made from scrap copper magnet wire, of a gauge between 10 and 18. Maybe one pound of scrap material was suitable for making 10-11 coils, however processing costs were very high on a labour front, and attempts of acquiring more suitable raw material has been unsuccessful. A Chinese supplier that produces aluminum coils has been found, however they require a minimum order quantity of 1,000 units, working out to ~210 Canadian shipped. Each unit is 34 coils, and each notebook requires 16 coils (3:1 pitch), working out to a cost per unit of 11 cents Canadian. Some processing will be required, turning the extra coil into an ornament, however overall costs will be minimized. Current coils are 5/8" diameter, which works with varying success at a 150 page load (higher gauge wire has less room availble for paper). Orders for aluminum coils will aim for 3/4" coils, for expansion capability.
+- I can transmute $7.50 of labour down to $1.50 by purchasing coils in bulk from China. This will enable a constant, secure supply, and enable me to focus my efforts onto things that are more financially rewarding, as well as conceivably expand into the future.
 
-#### Round 1 Production Figures
+- | Option               | Quantity   | Cost Per Unit | Total Cost |      |
+  | -------------------- | ---------- | ------------- | ---------- | ---- |
+  | Copper               | 12         | $7.50         | $90        |      |
+  | Carl 18mm Gray Steel | 3          | $1.56         | 4.69 USD   |      |
+  | Aluminium            | 1000(2000) | 0.085 USD     | 170 USD    |      |
 
-###### Copper Wire Notes
+#### Coil Diameter Table
 
-- 5/8" diameter 39" wire length produces slightly more than one 16 run noteook
-- 6/8" diameter 40" wire length produces 14 rings
-- 120" wire length produces 35 1" rings, 45 6/8" ring
-- 12 rings 1" diameter = 19 rings 5/8" diameter
-- 16 rings 1" diameter = 27 rings 5/8" diameter
-- 40 rings 1" diameter =57 rings 5/8" diameter
-- 1" diameter coil with 39" wire length produces 11 rings
-- 1" diameter coil with 51" of wire length produces 16 rings
-- 7/8" diameter coil with 46 1/3" wire length produces 16 rings
-- 6/8" diameter coil with 45" wire length produces 16 rings
-- 125" wire length produces 43 rings 7/8" coil
-- 5/8" diamter coils are aceptable for bidning together a 100 page notebook
+| Coil Diameter (Imperial) | Coil Diameter (Metric) | # 20lb Sheets |
+| ------------------------ | ---------------------- | ------------- |
+| 1/4"                     | 6mm                    | 5-35          |
+| 9/32"                    | 7mm                    | 36-47         |
+| 5/16"                    | 8mm                    | 48-60         |
+| 23/64"                   | 9mm                    | 61-70         |
+| 3/8"                     | 10mm                   | 71-80         |
+| 7/16"                    | 11mm                   | 81-90         |
+| 1/2"                     | 12mm                   | 91-100        |
+| 17/32"                   | 13mm                   | 101-110       |
+| 9/16"                    | 14mm                   | 111-120       |
+| 19/32"                   | 15mm                   | 121-130       |
+| 5/8"                     | 16mm                   | 131-140       |
+| 43/64"                   | 17mm                   | 141-150       |
+| 23/32"                   | 18mm                   | 151-160       |
+| 3/4"                     | 20mm                   | 161-180       |
+| 7/8"                     | 22mm                   | 181-200       |
+| 29/32"                   | 23mm                   | 201-210       |
+| 1"                       | 25mm                   | 211-230       |
+| 1 1/8"                   | 28mm                   | 231-260       |
+| 1 3/16"                  | 30mm                   | 261-280       |
+| 1 1/4"                   | 32mm                   | 281-290       |
 
-I've crafted and installed coils on four different styles of notebooks. The aestheticals are great, the weight is immense, the labour involved is significantly, and hardly profitable. 
-
-- 1 score of scrap magnet wire (maybe 1 lb) provided enough raw material for ~12 half-letter size notebook
-- Thick wire requries a larger coil diameter to compensate, in order to contain the same number of pages as a smaller diameter wire coil
-
-> Scrap Metal Dealers
->
-> Name|Address|Phone|Email
->
-> ---|---|---|---
->
-> Maple Leaf Metals | 4510 68 Ave NW | 780-468-3951 | info@mapleleafmetals.com
+#### Copper Info
 
 | Maple Leaf Metals | 4510 68 Ave NW  | 780-468-3951 | info@mapleleafmetals.com   |
 | ----------------- | --------------- | ------------ | -------------------------- |
 | General Recycling | 11915 156 St NW | 780-453-7000 | sales@generalrecycling.com |
 | General Recycling | 4120 84 Ave Nw  | 780-809-3280 | sales@generalrecycling.com |
 |                   |                 |              |                            |
-
-
-
-##### Final Bookbinding//Finishing
 
 - 7.5 minutes on average to straighten and coil a suitable length of copper
 - 3 minutes on average to elongate a sraightened coil
@@ -104,33 +103,55 @@ I've crafted and installed coils on four different styles of notebooks. The aest
 - At $30/hr time value this means each spiral coil costs $7.50 to produce and finish.
 - Unable to secure additional copper resources
 
-
-
-
-
-#### Costs to acquire instead of produces
-
-- mybinding.com sells a 3 pack of 'Carl 18mm Gray Steel 3:1 spiral wire coil) for $4.69 USD. These coils are long enough for 2 16 coil bindings each, resulting in a cost per unit of $0.78 USD ($1.03 CAD)
-
-
-
-
-
-#### TODO: Find suitable faculties for laboratory analysis of Chinese coils to ascertain the presencee of heavy metals
-
-#### TODO: Consider grinding a blunt edge onto the insertion point of the coil, so as to spare the cover from trauma, and cease being a danger to children
+- 
 
 ### Paper
 
-Replacement paper supplies need to be a thing. The concept here is based upon a reusable notebook, and given teh lack of erasable pages (aka Rocketbook) I need to be able to provide cost-effective replacement pages. I can print them myself, most likely, however shipping costs are as of yet a mystery. In my head i am imagining a web app where people can design their own page load, based upon a stable of options, which is then either printed on-site and dispatched, or else dispatched to a partnered print shop, or provided in raw pdf format with specific instructions as to how to produce it which is suitable to give to any print shop. I don't know yet if they can cater to that request, or how much it will cost.
+- Clarify the re-usable notebook concept.
+  - Am I still selling replacement paper fills?
+  - How much would it cost to print out a new load of paper for one of these notebooks?
+  - Excel spreadsheets for how much it will cost to provide this service (it's reasonable).
+  - How much will it cost me to ship!?
+  - How much does the paper weigh?
 
-#### TODO: Paper Sourcing Costs Table
+#### Supply Costs
 
-#### Inner/Outer Covers
+| Qty  | Count | Weight | Brightness | # Books | Cost  | Cost per Book | Brand              |
+| ---- | ----- | ------ | ---------- | ------- | ----- | ------------- | ------------------ |
+| 5    | 500   | 20 lb  | 92         | 30      | 32.50 | 0.65          | Amazon Basics      |
+| 6    | 400   | 20 lb  | 92         | 48      | 43.95 | 0.91          | HP Copy & Print    |
+| 1    | 2500  | 20 lb  | 92         | 50      | 44.90 | 0.89          | Office 20          |
+| 5    | 500   | 24 lb  | 100        | 50      | 71.78 | 1.43          | Premium 24         |
+| 10   | 500   | 18 lb  | 67         | 100     | 89.68 | 0.89          | HP EcoEficient 18  |
+| 5    | 500   | 20 lb  | 96         | 50      | 48.48 | 0.96          | HP Multipurpose 20 |
+| 3    | 500   | 20 lb  | 92         | 30      | 19.41 | 0.65          | Amazon Basics      |
+| 6    | 400   | 20 lb  | 92         | 48      | 47.90 | 1.00          | Hammermill         |
+| 8    | 500   | 20 lb  | 92         | 80      | 49.99 | 0.62          | Amazon Basics      |
 
-Thoughts include using recycled plastic half-letter as inner/outer liners, to prevent the density of the felt from adversely impacting writing performance. 
+#### Brother HL-L5200DW Printer
 
-Use of cardstock is also an option, and would enable to print on the thick cover, as well as have the 'in case found' page on the back of the title page.
+- 50,000 page per month duty cycle == 100,000 half-letter sized pages. Each notebook presently uses 150 half-size pages. This means I can produce 666 notebooks per month while being within the printers duty cycle.
+
+- This means it would take me 75 months to produce enough notebooks to make $1,000,000, at $20/notebook, with one printer. This assumes being able to sell 666 notebooks per month. This assumes $13,300/month gross revenue
+- This means it would take me 15 months to produce enough notebooks to make $1,000,000, at $20/notebook, with five printers. This assumes being able to sell 3300 notebooks per month. This amounts to $66,000/month gross revenue.
+
+##### Toner Prices
+
+| Qty  | Model  | Brand     | Price  | Price per Unit | Yield (total) | # books (75 pages per book) | Cost per Book |
+| ---- | ------ | --------- | ------ | -------------- | ------------- | --------------------------- | ------------- |
+| 1    | TN820  | Brother   | 88.98  | 88.98          | 3000          | 40                          | $2.22         |
+| 1    | TN850  | Brother   | 129.99 | 129.99         | 8000          | 106                         | $1.22         |
+| 3    | TN-850 | Moustache | 140.99 | 46.99          | 24000         | 320                         | $0.44         |
+| 1    | DR-820 | Brother   | 152.99 | 152.99         | 30000         | 400                         | $0.38         |
+| 1    | DR-820 | Moustache | 69.99  | 69.99          | 30000         | 400                         | $0.17         |
+
+
+
+Present toner load is ~90% after 500 pages. This would amount to 4500 pages yielded from the TN820, instead of 3000. This is a significant improvement, and might mean that printing costs will be less than expected/anticipated.
+
+Present printing costs including replacement Moustache toner, and drum units, amount to $0.61 per 75(150) page notebook. Add that to AmazonBasics paper and it now costs an additional $0.65, amounting to $1.26 per notebook.
+
+#### TODO: Cardstock Inner/Outer Covers
 
 ### Heat Press
 
@@ -154,15 +175,7 @@ The interior pages, in the initial offeringo, are relatively standard dot grid a
 
 Smart notebook premise is to first gather data on user habits, patterns, and actual pages, to get a better idea of just what kind of information they are tracking. Then, to design pages that use the planning apparatus they themselves have drawn (dotgrid only) and re-create it using HTML, and CSS. Then comes the big stuff. Use an OCR algorithm to (RELIABLY!!!!) pull structured, machine-clean-data from the charts, calenders, and whatnot. THEN, we feed it into app integrations. Same basic idea as the Rocketbook, except instead of just uploading images, which at best use Evernote's OCR search algorithm, we instead auto-magically update the users google (or whomever) calendar with what they just wrote in on their paper calender. This could go much further, and a thorough study of the current utilization of the technologies found in enterprise level CRM software is warranted. This is a very late stage of the game, and it's likely to require hiring in outside help. Call it Phase IV.
 
-### Printing
 
-Production of the interior pages is done using an at-home Brother B&W laser printer. It's 50,000 pages per month duty cycle (100,000 actual, half-letter) is capable of producing 1,000 units per month (assuming 100 pages per notebook sold). This printer features a 0.17in margin on all sides when using the borderless setting, which, with proper page design, is virtually invisible to the end user.
-
-Colour print faculties are presently inaccessible. Use of a consumer-grade ink-tank printer is an option, however uncertain as to whether my production capabilities can presently justify.
-
-###### TODO: Contact local print shops to get quotes on how much they would charge to produce the pages as required
-
-###### TODO: Compile price points of replacement ink, drum, for both manufacturer as well as refilled units.
 
 ### Production Capacity
 

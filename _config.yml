@@ -25,9 +25,9 @@ github_username: ginfuru
 # My shit
 book:
   title: "Your Book"
-  coverpage: false
-  contactpage: false
-quantity: 4
+  coverpage: true
+  contactpage: true
+quantity: 0
 lineheight: 0.26
 pageheight: 7.75
 pagewidth: 5.33
