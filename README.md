@@ -1,3 +1,30 @@
+# Realtalk
+Requirements:
+- Prince XML
+- Ruby
+- NodeJS 10.5.1 (other versions might work, but this version of gulp doesn't
+    work with 12, at the least. I don't think 11 either.)
+
+Project to build properly formatted notebook pages, ready for printing out on
+letter sized pages in a printer with 0.17in margins (brother laser) and cut in
+half, and having it actually look clean and nice.
+
+Features:
+- customizable cover photo front page
+- contact page 100% ripped off from moleskine
+- choice of quarter inch dotgrid, 3/8in dotgrid, lined, or blank pages
+- choice of pagecount.
+
+Pages are generated to be 8.5" x 5.5". This is presently not customizable.
+Pages are designed to be cut in the middle.
+
+Printing should be done using Adobe Acrobat using LTR-Borderless setting, 2
+pages per sheet, double sided.
+
+After cutting into two halves join them together in the middle. Punch holes.
+Shazam.
+
+
 <div align="center">
 <p><img src="https://d.pr/free/i/FDUErn+" alt="Flightdeck Logo"></p>
 <h1>Flightdeck</h1>
