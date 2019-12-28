@@ -1,5 +1,7 @@
 # Title Page
 
+The plan is to make a million bucks. The ideal is the bridge between the paper, the pen, and the digits. The product is a notebook.
+
 # Plan Summary
 
 # Table of Contents
@@ -14,13 +16,7 @@ The cover material is scrap vinyl flooring, made directly from manufacturer samp
 
 
 
-### Corner Cutter
-
-- Weights roughly 20 lbs
-- Costs roughly 128 lbs
-- 1/4" and 3/8" (R6 and R10) are two most common blades
-- Roughly $128 cost for unit
-- All viable units are seemingly of Chinese manufacture
+- 
 
 ### Hole Punch
 
@@ -45,13 +41,16 @@ Train eyeball before beginning to ensure consistent 7/16" margins are produced b
 
 ### Vinyl Cover
 
-Further supplies of vinyl material is not presently a major concern, due to the inabilities to process the materials i already possess (pending maker). I want to talk to the manufacturer direct, perhaps, although contacting other similar local businesses is likely to reveal numerous other leads. I was informed that I can contact Pat Whitehorn in a few months (since October???) to try to secure additional supplies. If I can make good use of the otherwise garbage cover materials, that is perhaps the most environmentally friendly option. I need to search out what I would be paying for this material if paid both at MSRP, as well as what I can find at local discount retailers (end of the roll, reuse center, etc.)
-
-Presently supplies of vinyl flooring are, optimistically, enough for ~350 half-letter sized notebooks, as well as numerous more pocket-sized books (pending design, as well as purchase of suitable perforated paper). The pocketbooks will mimic the format of the 'little black book' i purchased for $5 at the art store near Whyte, however will have covers made of much higher quality materials. Testing using a copper coil has proven insufficiently durable for my own back pocket, however further attempts will be made using the aluminum supplies before bringing to market. 
-
-#### TODO: How do I//can I clean felt?
-
-
+- Initial stock procurement provided enough samples to produce 102 covers (50 notebooks) with a minimum of additional processing.
+- stock for 94 additional notebooks (188 covers total) exists once processing of vinyl rolls is made possible.
+- One store one visit produced material for 144 notebooks. $2,880 at $20 each.
+- This means I would need to visit 347 times like this to produce enough notebooks to make $1,000,000. If I did it over a year that would entail relationships with 86.75 stores, assuming I could hit each store once per 3 months for a yield much like this.
+- If I need to purchase vinyl roll material, the product is still economical to make.
+- I can produce ~25 notebooks per 20 sq. ft of raw material
+- At $2/sq ft that works out to $1.60 per notebook
+- At $5/sq ft that's $4/notebook
+- At $8/sq ft that's $6.40/notebook
+- Pat Whitehorn after 3 months
 
 ### Spiral Coils
 
@@ -153,19 +152,30 @@ Present printing costs including replacement Moustache toner, and drum units, am
 
 #### TODO: Cardstock Inner/Outer Covers
 
+#### Cutting
+
+- Presently using straight edge + razor in garage. 5 sheets at a time
+- Very sub-optimal product is produced. Uneven. Labour-intensive.
+- First batch done at Staples, again, 5 sheets a time. With new printing methods this is no longer acceptable for efficiency.
+
+- http://unclewiener.com/product/new-12-inch-a4-paper-cutter-guillotine-trimmer-cutting-machine-4qzj/ $160 (best option)
+
+##### Corners
+
+- Moleskine does it.
+- Copy shops will do it, but I don't know how much it will cost.
+- I don't know if my market wants it.
+
+- Weighs roughly 20 lbs
+- 1/4" and 3/8" (R6 and R10) are two most common blades
+- Roughly $128 cost for unit
+- All viable units are seemingly of Chinese manufacture
+
 ### Heat Press
 
 - Needed for Vinyl kerjiggering
 - Cricut Easypress is an option, but not very big, or necessarily multi-purpose
 - http://unclewiener.com/product/new-5-in-1-heat-press-swing-away-machine-sublimation-hat-mug-hp5in1h/
-
-### Paper Cutting
-
-Paper cutting is presently accomplished by going to staples, or using a razor blade. This is shit, and Staples isn't close enough for it to be a viable option for serious production entures. Additionally, their cutter is only capable of 5 pages at a time before the cuts are no longer clean. Most guillotine-style cutters seem capable of 15 pages at a time, making 1 notebook of 150 pages take only 5 operations of the paper cutter. Paper cutting is best done in batch processes, minimizing context switches. I need to buy a paper cutter.
-
-Paper has been presently handled using a stock of old dot-matrix paper, which, while labour intensive, has provided me with the initial stock of 2,000 pages. I'm nearly through half of that, some of it having been used for blank pages for the initial mock-ups, and others in printing the business planning book, as well as test pages for the page layout. I do not know what consumers want for paper. The current stock is 50% recycled, kinda browned on the edges, and of unknown restockability, however I find it quite nice to write with, and it gives the books a nice, aged feel to them, in addition to the copper.
-
-- http://unclewiener.com/product/new-12-inch-a4-paper-cutter-guillotine-trimmer-cutting-machine-4qzj/ $160 (pretty spiffy)
 
 ### Page Design//Layout
 
@@ -188,6 +198,8 @@ Presently my closet is sufficient to store all material hence acquired. I can se
 ### Heat Transfer Vinyls
 
 Use of Heat-Transfer-Vinyl technologies, made possible with the investment/acquisition in a Cricut Maker. This will enable collaboration with (select?) artists to have their work featured on the covers of the notebook. 
+
+### Refill Paper
 
 
 
