@@ -2,6 +2,30 @@
 layout: princely
 ---
 {% assign count = site.quantity %}
+{% assign leftpage = site.book.leftpage %}
+{% assign rightpage = site.book.rightpage %}
 {% for page in (1..count) %}
-{% include_cached 316.html %}
+
+  {% if leftpage == 316 %}
+    {% include_cached 316.html %}
+  {% elsif leftpage == "dotgrid" %}
+    {% include_cached dotgrid.html %}
+  {% elsif leftpage == "lined" %}
+    {% include_cached lined.html %}
+  {% else %}
+    {% include_cached blank.html %}
+  {% endif %}
+
+  {% if rightpage == 316 %}
+    {% include_cached 316.html %}
+  {% elsif rightpage == "dotgrid" %}
+    {% include_cached dotgrid.html %}
+  {% elsif rightpage == "lined" %}
+    {% include_cached lined.html %}
+  {% else %}
+    {% include_cached blank.html %}
+  {% endif %}
+  {% comment %}
+    {% include_cached 316.html %}
+  {% endcomment %}
 {% endfor %}

@@ -27,7 +27,9 @@ book:
   title: "Your Book"
   coverpage: true
   contactpage: true
-quantity: 0
+  leftpage: 316
+  rightpage: "blank"
+quantity: 146
 lineheight: 0.26
 pageheight: 7.75
 pagewidth: 5.33

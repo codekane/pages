@@ -1,0 +1,5 @@
+---
+layout: princely
+permalink: /prince/
+---
+
