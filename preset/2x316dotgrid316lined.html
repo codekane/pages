@@ -1,0 +1,10 @@
+---
+layout: preview
+---
+{% for page in (1..2) %}
+{% include_cached dotgrid.html height=8 width=5.25
+diameter=0.1875 unit="in" %}
+{% include_cached lined.html height=8 width=5.25
+diameter=0.1875 unit="in" %}
+
+{% endfor %}

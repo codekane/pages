@@ -1,3 +1,4 @@
+require 'yaml'
 desc "Builds 316.pdf from current settings"
 task :threedots do
   fork { exec('prince  --media=PRINT _site/316/index.html -o "316.pdf" -i html5 --baseurl="http://localhost:4000/"') }
@@ -20,4 +21,16 @@ task :preset do
     name = ruby.gsub(".html", "").gsub("preset/", "")
     fork { exec("prince --media=PRINT http://localhost:4000/#{ruby} -o assets/pdf/#{name}.pdf -i html5 --baseurl='http://localhost:4000/'") }
   end
+end
+
+task :predata do
+  dataout= []
+  Dir.glob("preset/*.html").each do |ruby|
+    data = {}
+    data[:file] = ruby.prepend("/")
+    data[:summary] = ruby.gsub("preset/", "").gsub(".html", "").gsub("/", "")
+    data[:pdf] = ruby.gsub(".html", ".pdf").gsub("preset/", "").prepend("/assets/pdf")
+    dataout << data
+  end
+  File.open("_data/predata.yml", "w") { |file| file.write(dataout.to_yaml) }
 end
