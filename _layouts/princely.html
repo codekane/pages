@@ -6,6 +6,13 @@ layout: default
   {% include cover.html %}
   {% endif %}
 
+
+  {% if site.book.index == true %}
+    {% include_cached index.html height=8 width=5.25
+  diameter=0.25 unit="in" count=4 %}
+  {% endif %}
+
+
   {% assign count = site.quantity %}
   {% capture leftpage %}
   {{ site.book.leftpage | strip | append: ".html" }}

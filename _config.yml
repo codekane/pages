@@ -27,10 +27,11 @@ book:
   title: "The Folly of a Man"
   coverpage: false
   contactpage: false
+  index: true
   leftpage: "lined"
   rightpage: "dotgrid"
   owner: "Ryan Horricks"
-quantity: 2
+quantity: 60
 lineheight: 0.26
 pageheight: 8
 pagewidth: 5.25
