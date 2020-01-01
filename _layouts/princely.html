@@ -1,45 +1,41 @@
 ---
 layout: default
 ---
+
+    <div class="scrolling-wrapper">
 {% if site.book.coverpage == true %}
-<div class="frontcover">
-</div>
-<div class="backcover">
-</div>
-{% endif %}
-{% if site.book.contactpage == true %}
-<div class="contact">
-  <div class="contact-info">
-    <p>In case of loss, please return to:</p>
-    <div class="blank-line"></div>
-    <div class="blank-line"></div>
-    <div class="blank-line"></div>
-    <div class="blank-line"></div>
+  <div class="frontcover">
   </div>
-</div>
+  <div class="backcover">
+  </div>
 {% endif %}
 
-{% assign count = site.quantity %}
-{% assign leftpage = site.book.leftpage %}
-{% assign rightpage = site.book.rightpage %}
-{% for page in (1..count) %}
-
-{% if leftpage == 316 %}
-{% include_cached 316.html %}
-{% elsif leftpage == "lined" %}
-{% include_cached lined_page.html %}
-{% else %}
-{% include_cached blank.html %}
+{% if site.book.contactpage == true %}
+  <div class="contact">
+    <div class="contact-info">
+      <p>In case of loss, please return to:</p>
+      <div class="blank-line"></div>
+      <div class="blank-line"></div>
+      <div class="blank-line"></div>
+    </div>
+  </div>
 {% endif %}
 
-{% if rightpage == 316 %}
-{% include_cached 316.html %}
-{% elsif rightpage == "lined" %}
-{% include_cached lined_page.html %}
-{% else %}
-{% include_cached blank.html %}
-{% endif %}
-{% comment %}
-{% include_cached 316.html %}
-{% endcomment %}
-{% endfor %}
+  {% assign count = site.quantity %}
+  {% capture leftpage %}
+    {{ site.book.leftpage | strip | append: ".html" }}
+  {% endcapture %}
+
+  {% capture rightpage %}
+    {{ site.book.rightpage | strip | append: ".html" }}
+  {% endcapture %}
+
+  {% for page in (1..count) %}
+
+  {% include_cached {{leftpage | strip}} %}
+
+    {% include_cached {{rightpage | strip}} %}
+
+  {% endfor %}
+
+    </div>

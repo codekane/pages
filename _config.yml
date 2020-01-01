@@ -28,7 +28,7 @@ book:
   coverpage: false
   contactpage: false
   leftpage: "lined"
-  rightpage: 316
+  rightpage: "dotgrid"
 quantity: 2
 lineheight: 0.26
 pageheight: 8

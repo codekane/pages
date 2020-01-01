@@ -1,4 +1,0 @@
----
-layout: preview
-permalink: /preview/
----

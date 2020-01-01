@@ -95,10 +95,30 @@ div.backcover {
   margin-top: 0.25in;
   margin-bottom: 0.25in;
 
-  .scrolling-page {
+  .page {
     border: 1px solid black;
     display: inline-block;
     height: 8in;
     width: 5.25in;
+    margin-top: 0.25in;
+    margin-bottom: 0.25in;
   }
 }
+
+@media print {
+  .scrolling-wrapper {
+    overflow-x: initial;
+    overflow-y: initial;
+    white-space: initial;
+    height: 8in;
+    margin: 0 0 0 0;
+
+    .page {
+      height: 8in;
+      width: 5.25in;
+      border: 0px white solid;
+      display: initial;
+    }
+  }
+}
+
