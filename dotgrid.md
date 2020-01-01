@@ -1,4 +1,0 @@
----
-layout: dotgrid
-permalink: /dotgrid/
----

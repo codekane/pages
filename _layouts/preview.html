@@ -34,24 +34,20 @@ layout: default
   {% for page in (1..count) %}
   <div class="scrolling-page">
     {% if leftpage == 316 %}
-    {% include_cached 316.html %}
-    {% elsif leftpage == "dotgrid" %}
-    {% include_cached dotgrid.html %}
+    {% include 316.html %}
     {% elsif leftpage == "lined" %}
-    {% include_cached lined_page.html %}
+    {% include lined_page.html %}
     {% else %}
-    {% include_cached blank.html %}
+    {% include blank.html %}
     {% endif %}
   </div>
   <div class="scrolling-page">
     {% if rightpage == 316 %}
-    {% include_cached 316.html %}
-    {% elsif rightpage == "dotgrid" %}
-    {% include_cached dotgrid.html %}
+    {% include 316.html %}
     {% elsif rightpage == "lined" %}
-    {% include_cached lined_page.html %}
+    {% include lined_page.html %}
     {% else %}
-    {% include_cached blank.html %}
+    {% include blank.html %}
     {% endif %}
   </div>
   {% endfor %}
