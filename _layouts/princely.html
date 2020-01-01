@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+
+
 <div class="scrolling-wrapper">
   {% if site.book.coverpage == true %}
   {% include cover.html %}
@@ -22,14 +24,17 @@ layout: default
   {{ site.book.rightpage | strip | append: ".html" }}
   {% endcapture %}
 
-  {% for page in (1..count) %}
+  {% assign cunt = count | minus: 2 %}
+  {% for page in (1..cunt) %}
 
 
+  {% comment %}
   {% include_cached {{leftpage | strip}} height=8 width=5.25
   diameter=0.1875 unit="in" %}
 
   {% include_cached {{rightpage | strip}} height=8 width=5.25
   diameter=0.1875 unit="in" %}
+  {% endcomment %}
 
   {% include_cached {{leftpage | strip}} height=8 width=5.25
   diameter=0.25 unit="in" %}
@@ -40,5 +45,12 @@ layout: default
 
 
   {% endfor %}
+
+  <div class="page" style="text-align: center;">
+    <h3 style="margin-top: 1.5in;">Is this the end?</h3>
+    <p>or is it just a new beginning.</p>
+    <br>
+    <p>Custom paper reloads available at www.spokebooks.com</p>
+  </div>
 
 </div>

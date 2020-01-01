@@ -25,11 +25,11 @@ github_username: ginfuru
 # My shit
 book:
   title: "The Folly of a Man"
-  coverpage: false
+  coverpage: true
   contactpage: false
   index: true
-  leftpage: "lined"
-  rightpage: "dotgrid"
+  leftpage: "dotgrid"
+  rightpage: "lined"
   owner: "Ryan Horricks"
 quantity: 60
 lineheight: 0.26
