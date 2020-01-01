@@ -1,41 +1,41 @@
 ---
 layout: default
 ---
+<div class="scrolling-wrapper">
 
-    <div class="scrolling-wrapper">
-{% if site.book.coverpage == true %}
-  <div class="frontcover">
-  </div>
-  <div class="backcover">
-  </div>
-{% endif %}
+  {% if site.book.coverpage == true %}
+  {% include cover.html %}
+  {% endif %}
 
-{% if site.book.contactpage == true %}
-  <div class="contact">
-    <div class="contact-info">
-      <p>In case of loss, please return to:</p>
+  <div class="page" style="text-align: center;">
+    <p style="margin-top: 0.75in;">You've found my notebook.</p>
+    <br>
+    <p style="margin-top: 0.75in;">Would you kindly return it to:</p>
+    <br>
+    <div style="margin-left: 1in;">
+      <div class="blank-line"></div>
       <div class="blank-line"></div>
       <div class="blank-line"></div>
       <div class="blank-line"></div>
     </div>
   </div>
-{% endif %}
+
 
   {% assign count = site.quantity %}
   {% capture leftpage %}
-    {{ site.book.leftpage | strip | append: ".html" }}
+  {{ site.book.leftpage | strip | append: ".html" }}
   {% endcapture %}
 
   {% capture rightpage %}
-    {{ site.book.rightpage | strip | append: ".html" }}
+  {{ site.book.rightpage | strip | append: ".html" }}
   {% endcapture %}
 
   {% for page in (1..count) %}
 
   {% include_cached {{leftpage | strip}} %}
 
-    {% include_cached {{rightpage | strip}} %}
+  {% include_cached {{rightpage | strip}} %}
 
   {% endfor %}
 
-    </div>
+</div>

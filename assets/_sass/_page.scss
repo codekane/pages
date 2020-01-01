@@ -72,18 +72,16 @@ div.blank-line {
 div.frontcover {
   page: cover;
   content: url($coverart);
-  max-width: 4.25in;
-  max-height: 7in;
-  margin: 0.5in 0.5in 0.5in 0.5in;
+  max-width: 5in;
+  max-height: 8in;
   page-break-after: always;
 }
 
 // Blank Page
 
-div.backcover {
+div.blank-page {
   page: cover;
-  width: 5.25in;
-  height: 8in;
+  page-break-after: always;
 }
 
 // Styles for the horizontally scrolling print preview
@@ -102,6 +100,7 @@ div.backcover {
     width: 5.25in;
     margin-top: 0.25in;
     margin-bottom: 0.25in;
+    vertical-align: text-top;
   }
 }
 
