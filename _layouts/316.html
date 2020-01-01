@@ -11,7 +11,7 @@ layout: princely
   {% elsif leftpage == "dotgrid" %}
     {% include_cached dotgrid.html %}
   {% elsif leftpage == "lined" %}
-    {% include_cached lined.html %}
+    {% include_cached lined_page.html %}
   {% else %}
     {% include_cached blank.html %}
   {% endif %}
@@ -21,7 +21,7 @@ layout: princely
   {% elsif rightpage == "dotgrid" %}
     {% include_cached dotgrid.html %}
   {% elsif rightpage == "lined" %}
-    {% include_cached lined.html %}
+    {% include_cached lined_page.html %}
   {% else %}
     {% include_cached blank.html %}
   {% endif %}

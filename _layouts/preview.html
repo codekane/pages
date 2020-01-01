@@ -1,0 +1,58 @@
+---
+layout: default
+---
+<div class="scrolling-wrapper">
+
+  {% if site.book.coverpage == true %}
+  <div class="scrolling-page">
+    <div class="frontcover">
+    </div>
+  </div>
+  {% comment %}
+  <div class="scrolling-page">
+    <div class="backcover">
+    </div>
+  </div>
+  {% endcomment %}
+  {% endif %}
+  {% if site.book.contactpage == true %}
+  <div class="scrolling-page">
+    <div class="contact">
+      <div class="contact-info">
+        <p>In case of loss, please return to:</p>
+        <div class="blank-line"></div>
+        <div class="blank-line"></div>
+        <div class="blank-line"></div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% assign count = site.quantity %}
+  {% assign leftpage = site.book.leftpage %}
+  {% assign rightpage = site.book.rightpage %}
+  {% for page in (1..count) %}
+  <div class="scrolling-page">
+    {% if leftpage == 316 %}
+    {% include_cached 316.html %}
+    {% elsif leftpage == "dotgrid" %}
+    {% include_cached dotgrid.html %}
+    {% elsif leftpage == "lined" %}
+    {% include_cached lined_page.html %}
+    {% else %}
+    {% include_cached blank.html %}
+    {% endif %}
+  </div>
+  <div class="scrolling-page">
+    {% if rightpage == 316 %}
+    {% include_cached 316.html %}
+    {% elsif rightpage == "dotgrid" %}
+    {% include_cached dotgrid.html %}
+    {% elsif rightpage == "lined" %}
+    {% include_cached lined_page.html %}
+    {% else %}
+    {% include_cached blank.html %}
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>

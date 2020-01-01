@@ -6,4 +6,19 @@
 @import "webapp";
 @import "../../node_modules/spectre.css/src/spectre.scss";
 
+// Styles for the horizontally scrolling print preview
+.scrolling-wrapper {
+  overflox-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 8.5in;
+
+  .scrolling-page {
+    border: 1px solid black;
+    display: inline-block;
+    height: 8.5in;
+    width: 5.5in;
+  }
+}
+
 
