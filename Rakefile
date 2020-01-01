@@ -11,3 +11,8 @@ task :prince do
   fork { exec('prince --media=PRINT _site/prince/index.html -o "output.pdf" -i html5 --baseurl="http://localhost:4000/"') }
 end
 
+task :index do
+  fork { exec('prince --media=PRINT http://localhost:4000/index/ -o "index.pdf" -i html5 --baseurl="http://localhost:4000/"') }
+end
+
+
