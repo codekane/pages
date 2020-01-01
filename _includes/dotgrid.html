@@ -4,7 +4,7 @@
                      height="{{include.height}}in" viewBox="0 0
                      {{include.width | abs | times: 96 | round}} {{include.height | abs | times: 96
                      | round}}">
-    <pattern id="dotgrid" x="0" y="0"
+    <pattern id="{{"dotgrid" | append: include.diameter}}" x="0" y="0"
                                         width="{{include.diameter}}{{include.unit}}"
                                         height="{{include.diameter}}{{include.unit}}"
                                         patternUnits="userSpaceOnUse">
@@ -15,7 +15,7 @@
     <!-- canvas with applied pattern -->
     <rect x="0in" y="0in" width="{{include.width}}{{include.unit}}"
                           height="{{include.height}}{{include.unit}}"
-                          fill="url(#dotgrid)"
+                          fill="url(#{{"dotgrid" | append: include.diameter}})"
                           />
   </svg>
 </div>

@@ -25,7 +25,7 @@ github_username: ginfuru
 # My shit
 book:
   title: "The Folly of a Man"
-  coverpage: true
+  coverpage: false
   contactpage: false
   leftpage: "lined"
   rightpage: "dotgrid"
