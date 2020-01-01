@@ -12,7 +12,7 @@ task :prince do
 end
 
 task :index do
-  fork { exec('prince --media=PRINT http://localhost:4000/index/ -o "index.pdf" -i html5 --baseurl="http://localhost:4000/"') }
+  fork { exec('prince --media=PRINT http://localhost:4000/index/ -o "pdf/index.pdf" -i html5 --baseurl="http://localhost:4000/"') }
 end
 
 

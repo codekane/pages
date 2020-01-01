@@ -1,46 +1,60 @@
 ---
 layout: default
 ---
-
 <div class="webapp">
   <h1>SpokeBooks</h1>
-  <a href="/prince/"> Go here to print </a>
-  <br>
-  <a href="/preview/"> Go here for a hoziontally scrolling page preview</a>
   <br>
   <a href="/index/"> Go here to print out some index pages! </a>
 
 </div>
 
-{% comment %}
-<div class="home test">
-  {%- if page.title -%}
-  <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
 
-  {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-  <ul class="post-list">
-    {%- for post in site.posts -%}
-    <li>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h3>
-      {%- if site.show_excerpts -%}
-      {{ post.excerpt }}
-      {%- endif -%}
-    </li>
-    {%- endfor -%}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-  {% endcomment %}
-
+<div class="container">
+  <div class="columns">
+    <div class="column col-6 col-sm-12">
+      <a href="/prince/"> Preview current settings</a>
+    </div>
+    <div class="column col-6 col-sm-12">
+      <table>
+        <tr>
+          <td>Index Pages</td>
+          <td><a href="/index/">Preview</a></td>
+          <td><a href="/assets/pdf/index.pdf">PDF</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </div>
+
+  {% comment %}
+  <div class="home test">
+    {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+    {%- endif -%}
+
+    {{ content }}
+
+    {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+        {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {%- endif -%}
+    {% endcomment %}
+
+  </div>
