@@ -15,4 +15,9 @@ task :index do
   fork { exec('prince --media=PRINT http://localhost:4000/index/ -o "pdf/index.pdf" -i html5 --baseurl="http://localhost:4000/"') }
 end
 
-
+task :preset do
+  Dir.glob("preset/*.html").each do |ruby|
+    name = ruby.gsub(".html", "").gsub("preset/", "")
+    fork { exec("prince --media=PRINT http://localhost:4000/#{ruby} -o assets/pdf/#{name}.pdf -i html5 --baseurl='http://localhost:4000/'") }
+  end
+end
