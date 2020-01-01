@@ -86,17 +86,6 @@ div.backcover {
   height: 8in;
 }
 
-// Lines on the lined page
-div.line {
-  height: 0.25in;
-  width: 5.25in;
-  border-bottom: 0.01in solid var(--line-color);
-  &:first-of-type {
-    border-top: 0.01in solid var(--line-color);
-    margin-top: 0.5in;
-  }
-}
-
 // Styles for the horizontally scrolling print preview
 .scrolling-wrapper {
   overflox-x: scroll;

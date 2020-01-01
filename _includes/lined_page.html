@@ -1,7 +1,18 @@
 {% assign lineheight = site.lineheight %}
 {% assign pageheight = site.pageheight %}
 {% assign lines = pageheight | divided_by: lineheight | round | subtract 4 %}
-{% for line in (1..lines) %}
-<div class="line">
+
+<div class="page">
+
+  <svg class="guide" xmlns="http://www.w3.org/2000/svg" width="5.25in"
+                                                        height="8in" viewBox="0 0 504 768">
+
+    <pattern id="line" x="0" y="0" width="5.25in" height="0.1875in"
+                                                  patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0in" x2="5.25in" y2="0in" stroke-thickness="1"
+                                               stroke="#A0A0A0" />
+    </pattern>
+
+    <rect x="0in" y="0in" width="5.25in" height="8in" fill="url(#line)" />
+  </svg>
 </div>
-{% endfor %}
