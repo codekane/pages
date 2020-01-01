@@ -1,17 +1,22 @@
 <div class="page">
-  <svg class="guide" xmlns="http://www.w3.org/2000/svg" width="5.25in"
-                                                        height="8in" viewBox="0 0
-                                                        504 768">
-    <pattern id="three_sixteenth" x="0" y="0" width="0.1875in" height="0.1875in"
-                                                               patternUnits="userSpaceOnUse">
+  <svg class="guide" xmlns="http://www.w3.org/2000/svg"
+                     width="{{include.width}}{{include.unit}}"
+                     height="{{include.height}}in" viewBox="0 0
+                     {{include.width | abs | times: 96 | round}} {{include.height | abs | times: 96
+                     | round}}">
+    <pattern id="dotgrid" x="0" y="0"
+                                        width="{{include.diameter}}{{include.unit}}"
+                                        height="{{include.diameter}}{{include.unit}}"
+                                        patternUnits="userSpaceOnUse">
 
-    <circle cx="0.09375in" cy="0in" r="0.7" fill="#A0A0A0" />
+    <circle cx="{{include.diameter | abs | divided_by: 2.0}}" cy="0in" r="0.7" fill="#A0A0A0" />
     </pattern>
 
     <!-- canvas with applied pattern -->
-    <rect x="0in" y="0in" width="5.25in" height="8in"
-                                         fill="url(#three_sixteenth)"
-                                         />
+    <rect x="0in" y="0in" width="{{include.width}}{{include.unit}}"
+                          height="{{include.height}}{{include.unit}}"
+                          fill="url(#dotgrid)"
+                          />
   </svg>
 </div>
 

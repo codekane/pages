@@ -17,9 +17,11 @@ layout: default
 
   {% for page in (1..count) %}
 
-  {% include_cached {{leftpage | strip}} %}
+  {% include_cached {{leftpage | strip}} height=8 width=5.25
+  diameter=0.1875 unit="in" %}
 
-  {% include_cached {{rightpage | strip}} %}
+  {% include_cached {{rightpage | strip}} height=8 width=5.25
+  diameter=0.1875 unit="in" %}
 
   {% endfor %}
 
