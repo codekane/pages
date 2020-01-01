@@ -2,24 +2,9 @@
 layout: default
 ---
 <div class="scrolling-wrapper">
-
   {% if site.book.coverpage == true %}
   {% include cover.html %}
   {% endif %}
-
-  <div class="page" style="text-align: center;">
-    <p style="margin-top: 0.75in;">You've found my notebook.</p>
-    <br>
-    <p style="margin-top: 0.75in;">Would you kindly return it to:</p>
-    <br>
-    <div style="margin-left: 1in;">
-      <div class="blank-line"></div>
-      <div class="blank-line"></div>
-      <div class="blank-line"></div>
-      <div class="blank-line"></div>
-    </div>
-  </div>
-
 
   {% assign count = site.quantity %}
   {% capture leftpage %}
