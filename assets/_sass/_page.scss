@@ -61,12 +61,35 @@ div.contact {
   page: contact;
 }
 // Used for styling the lines for users to fill in contact info
-div.blank-line {
-  width: 3in;
+.blank-line {
+  width: 3.5in;
+  margin: 0.125in 0.875in 0.125in 0.875in;
   height: 0.25in;
   border-bottom: solid 1px black;
   line-height: 0.25in;
+  &-name {
+    margin: 0.25in 0.75in 0in 0.75in;
+    width: 3.75in;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.5);
+    line-height: 0.5in;
+  }
+  &-bottom {
+    margin: 0.375in 0.875in 0.25in 0.875in;
+    width: 3.5in;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.5);
+    line-height: 0.5in;
+  }
 }
+
+.feedback {
+  margin-top: 0.625in;
+}
+
+.contact-header {
+  margin-top: 1.25in;
+  margin-bottom: 0.625in;
+}
+
 
 // Front Cover Image Styles
 div.frontcover {
