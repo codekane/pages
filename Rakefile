@@ -16,6 +16,10 @@ task :index do
   fork { exec('prince --media=PRINT http://localhost:4000/index/ -o "pdf/index.pdf" -i html5 --baseurl="http://localhost:4000/"') }
 end
 
+task :cover do
+  fork { exec('prince --media=PRINT _site/cover/index.html -o "./assets/pdf/cover.pdf" -i html5 --baseurl="http://localhost:4000/"') }
+end
+
 task :preset do
   Dir.glob("preset/*.html").each do |ruby|
     name = ruby.gsub(".html", "").gsub("preset/", "")
