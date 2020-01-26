@@ -1,0 +1,82 @@
+<div class="page">
+  <svg class="guide" xmlns="http://www.w3.org/2000/svg"
+                     width="5.25in"
+                     height="8in" viewBox="0 0
+                     {{5.25 | abs | times: 96 | round}} {{8 | abs | times: 96
+                     | round}}">
+    <pattern id="cover-pattern" x="0" y="0"
+                                      width="0.375in"
+                                      height="0.375in"
+                                      patternUnits="userSpaceOnUse">
+
+    <line x1="0.125in" y1="0in" x2="0.25in" y2="0in" stroke-thickness="1"
+                                                     stroke="#000" />
+    <line x1="0in" y1="0.1875in" x2="0.375in" y2="0.1875in" stroke-thickness="1"
+                                                            stroke="#000" />
+    </pattern>
+
+    <!-- Vertically ruled -->
+    <pattern id="even-fill" x="0" y="0" width="0.375in" height="0.375in"
+                                                        patternUnits = "userSpaceOnUse">
+      <line x1="0.1875in" x2="0.1875in" y1="0in" y2="0.375in" stroke-thickness="1"
+                                                              stroke="#000" />
+    </pattern>
+
+    <!-- Horizontally ruled -->
+    <pattern id="odd-fill" x="0" y="0" width="0.375in" height="0.375in"
+                                                       patternUnits = "userSpaceOnUse">
+      <line x1="0in" x2="0.375in" y1="0.1875in" y2="0.1875in"
+                                                stroke-thickness="1" stroke="#000" />
+
+    </pattern>
+
+    <pattern id="odd-row"
+             x="0" y="0" width="5.25in" height="0.5625in"
+                                        patternUnits="userSpaceOnUse">
+      {% for i in (1..9) %}
+      {% assign odds = forloop.index | modulo: 2 %}
+        <rect x="{{forloop.index | abs | minus: 1 | times: 0.5625 | plus: 0.09375}}in"
+              y="0in" width="0.375in" height="0.375in" 
+                                      fill={% if odds == 0 %}
+                                      "url(#even-fill)"
+                                      {% else %}
+                                      "url(#odd-fill)"
+                                      {% endif %} />
+      {% endfor %}
+    </pattern>
+
+    <pattern id="even-row"
+             x="0" y="0" width="5.25in" height="0.5625in"
+                                        patternUnits="userSpaceOnUse">
+      {% for i in (1..9) %}
+      {% assign odds = forloop.index | modulo: 2 %}
+        <rect x="{{forloop.index | abs | minus: 1 | times: 0.5625 | plus: 0.09375}}in"
+              y="0in" width="0.375in" height="0.375in" 
+                                      fill={% if odds == 0 %}
+                                      "url(#odd-fill)"
+                                      {% else %}
+                                      "url(#even-fill)"
+                                      {% endif %} />
+      {% endfor %}
+    </pattern>
+
+
+    <!-- canvas with applied pattern -->
+    {% for i in (1..14) %}
+    {% assign odds = forloop.index | modulo: 2 %}
+    <rect x="0in" y="{{ forloop.index | abs | minus: 1 | times: 0.5625 }}in"
+                  width="5.25in" height="0.5625in" fill={% if odds == 0 %}
+                                                        "url(#odd-row)"
+                                                         {% else %}
+                                                         "url(#even-row)"
+                                                         {% endif %} />
+    {% endfor %}
+    <!--
+    <rect x="0in" y="0in" width="5.25in"
+                          height="8in"
+                          fill="url(#cover-pattern)"
+                          />
+    -->
+  </svg>
+</div>
+
