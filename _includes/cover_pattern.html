@@ -3,30 +3,30 @@
                      width="5.25in"
                      height="8in" viewBox="0 0
                      {{5.25 | abs | times: 96 | round}} {{8 | abs | times: 96
-                     | round}}">
+                     | round}}" style="margin-top: 0.1875in;">
     <pattern id="cover-pattern" x="0" y="0"
                                       width="0.375in"
                                       height="0.375in"
                                       patternUnits="userSpaceOnUse">
 
     <line x1="0.125in" y1="0in" x2="0.25in" y2="0in" stroke-thickness="1"
-                                                     stroke="#000" />
+                                                     stroke="#555" />
     <line x1="0in" y1="0.1875in" x2="0.375in" y2="0.1875in" stroke-thickness="1"
-                                                            stroke="#000" />
+                                                            stroke="#555" />
     </pattern>
 
     <!-- Vertically ruled -->
     <pattern id="even-fill" x="0" y="0" width="0.375in" height="0.375in"
                                                         patternUnits = "userSpaceOnUse">
       <line x1="0.1875in" x2="0.1875in" y1="0in" y2="0.375in" stroke-thickness="1"
-                                                              stroke="#000" />
+                                                              stroke="#555" />
     </pattern>
 
     <!-- Horizontally ruled -->
     <pattern id="odd-fill" x="0" y="0" width="0.375in" height="0.375in"
                                                        patternUnits = "userSpaceOnUse">
       <line x1="0in" x2="0.375in" y1="0.1875in" y2="0.1875in"
-                                                stroke-thickness="1" stroke="#000" />
+                                                stroke-thickness="1" stroke="#555" />
 
     </pattern>
 
@@ -71,12 +71,6 @@
                                                          "url(#even-row)"
                                                          {% endif %} />
     {% endfor %}
-    <!--
-    <rect x="0in" y="0in" width="5.25in"
-                          height="8in"
-                          fill="url(#cover-pattern)"
-                          />
-    -->
   </svg>
 </div>
 

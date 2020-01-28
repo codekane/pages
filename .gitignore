@@ -32,3 +32,4 @@ doc/
 *.lock
 *-lock.json
 output.pdf
+*.swo
