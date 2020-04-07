@@ -26,29 +26,20 @@ diameter=0.25 unit="in" count=4 %}
 {% assign cunt = count | minus: 2 %}
 {% for page in (1..cunt) %}
 
-
 {% comment %}
-{% include_cached {{leftpage | strip}} height=8 width=5.25
-diameter=0.1875 unit="in" %}
+{% include_cached {{leftpage | strip}} height={{site.book.pageheight}}
+width={{site.book.pagewidth}} diameter={{site.book.diameter}}
+unit={{site.book.units | strip}} %}
 
-{% include_cached {{rightpage | strip}} height=8 width=5.25
-diameter=0.1875 unit="in" %}
+{% include_cached {{rightpage | strip}} height={{site.book.pageheight}}
+width={{site.book.pagewidth}} diameter={{site.book.diameter}}
+unit={{site.book.units | strip}} %}
 {% endcomment %}
 
 {% include_cached {{leftpage | strip}} height=8 width=5.25
-diameter=0.25 unit="in" %}
+diameter=0.1875 unit="in" %}
 
 {% include_cached {{rightpage | strip}} height=8 width=5.25
-diameter=0.25 unit="in" %}
-
-
+diameter=0.1875 unit="in" %}
 
 {% endfor %}
-
-<div class="page" style="text-align: center;">
-  <h3 style="margin-top: 1.5in;">Is this the end?</h3>
-  <p>or is it just a new beginning.</p>
-  <br>
-  <p>Custom paper reloads available at www.spokebooks.com</p>
-</div>
-
