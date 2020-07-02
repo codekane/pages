@@ -1,12 +1,7 @@
 ---
 layout: preview
 ---
-
-
-{% if site.book.coverpage == true %}
-{% include cover.html %}
-{% endif %}
-
+{% if site.book.coverpage == true %}{% include cover.html %}{% endif %}
 
 {% if site.book.index == true %}
 {% include_cached index.html height=8 width=5.25
