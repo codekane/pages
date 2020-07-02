@@ -1,7 +1,6 @@
 # My shit
 book:
   coverpage: true
-  contactpage: true
   index: false
   leftpage: "dotgrid"
   rightpage: "blank"
