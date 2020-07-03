@@ -9,7 +9,8 @@ diameter=0.25 unit="in" count=4 %}
 {% endif %}
 
 
-{% assign count = site.quantity %}
+{% assign count = site.book.pagecount %}
+
 {% capture leftpage %}
 {{ site.book.leftpage | strip | append: ".html" }}
 {% endcapture %}
@@ -18,23 +19,13 @@ diameter=0.25 unit="in" count=4 %}
 {{ site.book.rightpage | strip | append: ".html" }}
 {% endcapture %}
 
-{% assign cunt = count | minus: 2 %}
-{% for page in (1..cunt) %}
-
-{% comment %}
-{% include_cached {{leftpage | strip}} height={{site.book.pageheight}}
-width={{site.book.pagewidth}} diameter={{site.book.diameter}}
-unit={{site.book.units | strip}} %}
-
-{% include_cached {{rightpage | strip}} height={{site.book.pageheight}}
-width={{site.book.pagewidth}} diameter={{site.book.diameter}}
-unit={{site.book.units | strip}} %}
-{% endcomment %}
-
-{% include_cached {{leftpage | strip}} height=8 width=5.25
-diameter=0.1875 unit="in" %}
-
-{% include_cached {{rightpage | strip}} height=8 width=5.25
-diameter=0.1875 unit="in" %}
-
+{% assign c = count | minus: 2 %}
+{% for page in (1..c) %}
+  
+  {% include_cached {{leftpage | strip}} height=8 width=5.25
+  diameter=0.1875 %}
+  
+  {% include_cached {{rightpage | strip}} height=8 width=5.25
+  diameter=0.1875 %}
+  
 {% endfor %}

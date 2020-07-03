@@ -6,20 +6,15 @@
 ## Configuration
 ```yaml
 book:
-  coverpage: boolean # true to enable
-  # Controls presence of a full-page image front-page, paired with a space for inputting the owners contact information, should the book ever be lost, and then found. Totals (2) pages when true.
-  index: boolean # true to enable
-  # Controls presence of a collection of index pages at the front of the book, or after the coverpage, if present. The generated value is hardcoded to (4) which provides space for a total of 60 different ToC Entries. More of a Table of Contents than an Index.
+  coverpage: boolean # true === enabled; Adds 2 front pages cover/contact.
+  index: boolean # true === enabled; Adds 4 index pages to front behind cover.
+  leftpage: string # set to the filename (without extension) of an include.
+  rightpage: string # set to the filename (without extension) of an include.
+  diameter: float # controls the .svg spacing for lined/dotgrid pages.
+  pagecount: integer # sets the number of left/right pages to add to the output.
 ```
 
 ## Goals
-- [ ] Front-Page Features List
-- [ ] Page layout demonstrations
-- [ ] Configuration variables (and their effects)
-- [ ] Development instructions
-- [ ] User instructions
-- [ ] Informational Homepage
-
 
 ## Why
 I made this app in a frenzied few hours on Christmas Eve, 2019. The reason I

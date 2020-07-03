@@ -1,14 +1,11 @@
 # My shit
 book:
-  coverpage: true
-  index: false
-  leftpage: "dotgrid"
-  rightpage: "blank"
-  diameter: 0.1875
-  units: "in"
-  pageheight: 8
-  pagewidth: 5.25
-quantity: 10
+  coverpage: true # true === enabled; Adds 2 front pages: cover/contact.
+  index: false # true === enabled; Adds 4 index front pages behind cover.
+  leftpage: "dotgrid" # set to the filename of an include (without extension).
+  rightpage: "blank" # set to the filename of an include (without extension).
+  diameter: 0.1875 # spacing between dots/grids of left/right pages.
+  pagecount: 10 # number of left/right pages to add to output
 
 
 # Default Options

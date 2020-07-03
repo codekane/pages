@@ -1,20 +1,20 @@
 <div class="page">
   <svg class="guide" xmlns="http://www.w3.org/2000/svg"
-                     width="{{include.width}}{{include.unit}}"
+                     width="{{include.width}}in"
                      height="{{include.height}}in" viewBox="0 0
                      {{include.width | abs | times: 96 | round}} {{include.height | abs | times: 96
                      | round}}">
     <pattern id="{{"dotgrid" | append: include.diameter}}" x="0" y="0"
-                                        width="{{include.diameter}}{{include.unit}}"
-                                        height="{{include.diameter}}{{include.unit}}"
+                                        width="{{include.diameter}}in"
+                                        height="{{include.diameter}}in"
                                         patternUnits="userSpaceOnUse">
 
     <circle cx="{{include.diameter | abs | divided_by: 2.0}}" cy="0in" r="1" fill="#A0A0A0" />
     </pattern>
 
     <!-- canvas with applied pattern -->
-    <rect x="0in" y="0in" width="{{include.width}}{{include.unit}}"
-                          height="{{include.height}}{{include.unit}}"
+    <rect x="0in" y="0in" width="{{include.width}}in"
+                          height="{{include.height}}in"
                           fill="url(#{{"dotgrid" | append: include.diameter}})"
                           />
   </svg>

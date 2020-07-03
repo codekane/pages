@@ -6,37 +6,37 @@
   </div>
 
   <svg class="guide" xmlns="http://www.w3.org/2000/svg"
-                     width="{{include.width}}{{include.unit}}"
+                     width="{{include.width}}in"
                      height="{{include.height | minus: 0.5}}in" viewBox="0 0
                      {{include.width | abs | times: 96 | round}}
                      {{include.height | minus: 0.5 | abs | times: 96
                      | round}}">
 
-    <pattern id="{{"index" | append: include.diameter}}" x="0" y="0" width="{{include.width}}{{include.unit}}"
-                                                                    height="{{include.diameter | times: 2}}{{include.unit}}"
+    <pattern id="{{"index" | append: include.diameter}}" x="0" y="0" width="{{include.width}}in"
+                                                                    height="{{include.diameter | times: 2}}in"
                                                                     patternUnits="userSpaceOnUse">
     <!--  Top Line -->
-    <line x1="0" y1="0in" x2="{{include.width}}{{include.unit}}" y2="0in" stroke-thickness="1"
+    <line x1="0" y1="0in" x2="{{include.width}}in" y2="0in" stroke-thickness="1"
                                                                           stroke="#A0A0A0" />
     <!-- Page Number 
     <text class="index_num" x="0.5in" y="0.3in" text-anchor: start;>111</text>
 
 -->
     <!-- Mid Line -->
-    <line x1="1in" y1="{{include.diameter | append: include.unit}}"
-                   x2="{{include.width}}{{include.unit}}"
-                   y2="{{include.diameter | append: include.unit}}" stroke-thickness="1"
+    <line x1="1in" y1="{{include.diameter}}in"
+                   x2="{{include.width}}in"
+                   y2="{{include.diameter}}in" stroke-thickness="1"
                                                                     stroke="#A0A0A0" />
     <!-- Bottom Line -->
-    <line x1="0" y1="{{include.diameter | times: 2 | append: include.unit"
-                 x2="{{include.width}}{{include.unit}}" y2="{{include.diameter |
-                 times: 2 | append: include.unit}}" stroke-thickness="1"
+    <line x1="0" y1="{{include.diameter | times: 2}}in"
+                 x2="{{include.width}}in" y2="{{include.diameter |
+                 times: 2}}in" stroke-thickness="1"
                                                     stroke="#A0A0A0" />
 
     </pattern>
 
-    <rect x="0in" y="0in" width="{{include.width}}{{include.unit}}"
-                          height="{{include.height | minus: 0.5}}{{include.unit}}"
+    <rect x="0in" y="0in" width="{{include.width}}in"
+                          height="{{include.height | minus: 0.5}}in"
                           fill="url(#{{"index" | append: include.diameter }})" />
   </svg>
 </div>
